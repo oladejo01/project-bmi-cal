@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/mobileresp.css">
+</head>
+<!-- HTML  page to display bmi calculator -->
+<body class="bmiDisplay">
+  <span class="navbar">
+    <span class="nav">
+      <div class="name">MARIAM</div>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+      </ul>
+    </span>
+  </span>
+        <div class="modal">
+            <p class="head">Know your BMI status</p>
+          <div class="modalMain">
+            <div class="input">
+                <div class="data">
+                    Weight (in kilogram):
+                <input type="text" name="weight" id="weight">
+                <div class="error"></div>
+                    Height (in meters):
+                <input type="text" name="height" id="height">
+                <button class="cal" onclick="calc">calculate</button>
+                </div>
+            </div>
+            <div class="statusBar">
+                <h1><u>Result</u></h1>
+                <h2 id="result"></h2>
+                <h2 id="bmiStatus"></h2>
+                <p id="details"></p>
+                <p id="next"><a href="diet.html">click here</a> to chat with a registerred dietitian.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

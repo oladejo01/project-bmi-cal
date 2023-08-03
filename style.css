@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:blue;  
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.navbar{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 5rem;
+}
+.name{
+    font-size: 2.5rem;
+    text-shadow: rgba(253, 31, 31, 0.9);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 600;
+    color: fuchsia;
+    outline: 1px dotted #ffffff;
+    border-radius: 50%;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.frontpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.fill{
+    width: 40%;
+    height: 80%;
+    border-radius: 12px;
+    font-size: 1.5rem;
+    background-color: palevioletred;
+}
+.writeup{
+    width: 40%;
+    height: 80%;
+    border-radius: 12px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    width: 100%;
+    height: 100%;
+   color: black;
+   font-size: 2rem;
+   font-family: Georgia, 'Times New Roman', Times, serif
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modalMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 100%;
+    width: 100%;
+    border: 1px solid pink;
+}
+.modal .head{
+text-align: center;
+padding-top: 1rem;
+font-size: 2rem;
+height: 5rem;
+}
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5rem;
+}
+.statusBar{
+    width: 40%;
+    height: 80%;
+    border-radius: 12px;
+    background-color: gray; 
+    margin-right: 5rem;
+}
+#bmiStatus{
+    padding-left: 12px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+#weight, #height{
+width: 100%;
+height: 2rem;
+color: black;
+margin: 1rem 0;
+}
+.cal{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 12px;
+    background-color: burlywood;
+}
+#result{
+    color: black;
+    margin: 1rem;
+}
+#details{
+    padding-top: 1.5rem;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+p a{
+    color:blue
+}
+#next{
+    padding-top: 1rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+li{
+    list-style: none;  
+}
+
+li:hover{
+    color: fuchsia;
+}
+li a{
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* mobile responsiveness */
+@media screen and (max-width:800px) {
+    .name{
+        font-size: 2rem;
+    }
+    .nav{
+        padding: 0 1rem;
+    }
+    .modalMain{
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .statusBar{
+        width: 80%;
+        margin-right: 1rem;
+    }
+    .input{
+        padding-left: 1rem;
+    }
+    .data{
+        padding-top: 2rem;
+    }
+}
+
+ @media screen and (max-width:560px) {
+    .name{
+       font-size: 1rem;
+    }
+    .nav{
+        padding: 0 
+    }
+    .frontpage{
+        flex-direction: column;
+    }
+    .writeup, .fill{
+        width: 80%;
+    }
+   
+   }
+@media screen and (max-width:480px) {
+
+    .navbar{
+  display: none;
+    }
+    .modalMain{
+       flex-direction: column; 
+    }
+    .statusBar{
+        width: 80%;
+    }
+   }
+ 
